@@ -53,7 +53,7 @@ jobs:
         parallel-finished: true
         
   build-aarch64:
-    name: "Build ${{ matrix.pyver }} aarch64 wheel"
+    name: "Build and test ${{ matrix.pyver }} aarch64 wheel"
     strategy:
       matrix:
         pyver: [cp36-cp36m, cp37-cp37m, cp38-cp38]
